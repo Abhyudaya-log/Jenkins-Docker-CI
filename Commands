@@ -1,0 +1,15 @@
+Pulling and Docker Registry
+------------------------------------------------------------
+docker run -d -p 5000:5000 --restart=always --name local-registry registry:2
+
+Check the iamge is pushed in to the Registry
+--------------------------------------------------------
+http://localhost:5000/v2/student-demo-app/tags/list
+
+python command not found fx
+--------------------------------
+'C:\\Users\\VVCE\\AppData\\Local\\Programs\\Python\\Python311\\python.exe test.py'
+
+Delete the image and pull from the Registry
+------------------------------------------------------------------
+docker pull localhost:5000/anil-demo-app:1
